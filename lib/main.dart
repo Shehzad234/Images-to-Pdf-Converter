@@ -23,13 +23,14 @@ class MyMaterialApp extends StatelessWidget {
   Widget build(BuildContext context) {
     ThemeViewModel themeViewModel = Provider.of<ThemeViewModel>(context);
     return MaterialApp(
-        title: 'Png to Pdf Converter',
-        theme: themeViewModel.darkMode
-            ? ThemeData.dark()
-            : ThemeData(
-                primarySwatch: Colors.teal,
-              ),
-        routes: appRoutes,
-        home: const IntroView());
+      title: 'Png to Pdf Converter',
+      theme: themeViewModel.darkMode
+          ? ThemeData.dark()
+          : ThemeData(
+              primarySwatch: Colors.teal,
+            ),
+      routes: appRoutes,
+      home: const IntroView(),
+    );
   }
 }
